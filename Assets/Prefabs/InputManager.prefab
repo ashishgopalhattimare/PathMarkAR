@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1745876275733594}
+  m_IsPrefabAsset: 1
+--- !u!1 &1745876275733594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4307336373088116}
+  - component: {fileID: 114466896741067558}
+  m_Layer: 0
+  m_Name: InputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4307336373088116
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1745876275733594}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.12693898, y: 0.41261747, z: -0.41575843}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114466896741067558
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1745876275733594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d060fd36caf8a24d8a87861ad53ce49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereGO: {fileID: 1644752089526992, guid: ae8c84d5247568e428deb12de86a0693, type: 2}
+  food1: {fileID: 1435975322132286, guid: 97b392075ecc5a34682aca34c529e51e, type: 2}
+  food2: {fileID: 1322636039065686, guid: 447f97a820e21c14d9aebd46fe06fdb7, type: 2}
+  food3: {fileID: 1142570489089782, guid: 991c81c395da2114e9915d760dd7c8bb, type: 2}
+  food4: {fileID: 1620472855589332, guid: c44e7e0b7dc547f42bd123c2bea8127c, type: 2}
+  video360prefab: {fileID: 1845435792106790, guid: 5daeb93df5df06d408fe2f9966733569,
+    type: 2}
+  uitext: {fileID: 0}
+  arr: 00000000
+  toggle: {fileID: 0}
+  toggle1: {fileID: 0}
+  toggle2: {fileID: 0}
+  toggle3: {fileID: 0}
+  x: 0.2
+  y: 1
+  z: 0.2

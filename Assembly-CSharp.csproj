@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{578D21E7-1A84-D938-59DE-3CDDCE371C39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_11;UNITY_2018_3;UNITY_2018;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_RUNTIME_PERMISSIONS;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;NET_LEGACY;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.11f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.11f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\GoogleARCore\Examples\AugmentedImage\Scripts\AugmentedImageExampleController.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\AugmentedImage\Scripts\AugmentedImageVisualizer.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\AnchorController.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\ARCoreWorldOriginHelper.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\ARKitHelper.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\CloudAnchorsExampleController.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\LocalPlayerController.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\MultiplatformMeshSelector.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\NetworkManagerUIController.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\Common\Scripts\DetectedPlaneGenerator.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\Common\Scripts\DetectedPlaneVisualizer.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\Common\Scripts\PointcloudVisualizer.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\ComputerVisionController.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\EdgeDetector.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\PointClickHandler.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\TextureReader.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\TextureReaderApi.cs" />
+     <Compile Include="Assets\GoogleARCore\Examples\HelloAR\Scripts\HelloARController.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewInput.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewManager.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewTrackedPoseDriver.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewWarning.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Anchor.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\AndroidPermissionsManager.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\AndroidPermissionsRequestResult.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\NativeSession.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiApkInstallationStatus.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiApkInstallStatusExtensions.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiArStatus.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiArStatusExtensions.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiAvailability.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiAvailabilityExtensions.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiCameraFocusMode.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiCameraMetadata.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiCloudAnchorMode.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiCloudAnchorState.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiCloudAnchorStateExtensions.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiConstants.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiDisplayUvCoords.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiDisplayUvCoordsExtensions.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiFeaturePointOrientationMode.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiFeaturePointOrientationModeExtensions.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiLightEstimateState.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiLightEstimateStateExtensions.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiLightEstimationMode.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPlaneFindingMode.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPlaneType.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPlaneTypeExtensions.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPoseData.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPrestoConfig.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPrestoStatus.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPrestoStatusExtensions.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiTrackableType.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiTrackingState.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiTrackingStateExtensions.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiTrackingStateXPExtensions.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiUpdateMode.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\AnchorApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\AugmentedImageApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\AugmentedImageDatabaseApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\CameraApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\CameraConfigApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\CameraConfigListApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\CameraMetadataApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\FrameApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\HitTestApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\ImageApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\LightEstimateApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\PlaneApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\PointApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\PointCloudApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\PoseApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\SessionApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\SessionConfigApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\TrackableApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\TrackableListApi.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\ApkAvailabilityStatus.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\ApkInstallationStatus.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\ARCoreBackgroundRenderer.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\ARCoreSession.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\ARCoreSessionConfig.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Async\WaitForTaskCompletionYieldInstruction.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\AsyncTask.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\AugmentedImage.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\AugmentedImageDatabase.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\AugmentedImageDatabaseEntry.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\CameraConfig.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\CameraFocusMode.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\CameraImageBytes.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\CameraIntrinsics.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\CameraMetadataTag.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\CameraMetadataValue.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\CloudAnchorResult.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\CloudServiceResponse.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Deprecated\TrackedPlane.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Deprecated\TrackedPoint.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Deprecated\TrackedPointOrientationMode.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\DetectedPlane.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\DetectedPlaneFindingMode.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\DetectedPlaneType.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\DisplayUvCoords.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\EnvironmentalLight.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\ExperimentSupport\ExperimentBase.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\ExperimentSupport\ExperimentManager.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\FeaturePoint.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\FeaturePointOrientationMode.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Frame.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\LightEstimate.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\LightEstimateState.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\ARCoreAndroidLifecycleManager.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\ARCoreIOSLifecycleManager.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\ARPrestoCallbackManager.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\CloudServiceManager.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\ILifecycleManager.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\LifecycleManager.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\TrackableManager.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\PointCloudPoint.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Session.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\SessionStatus.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\SessionStatusExtensions.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Trackable.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\TrackableHit.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\TrackableHitFlags.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\TrackableQueryFilter.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\TrackingState.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ARCoreProjectSettings.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ARDebug.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ConversionHelper.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\DllImportNoop.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\IntPtrEqualityComparer.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\MarshalingHelper.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ShellHelper.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\SuppressMemoryAllocationErrorAttribute.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ThrottledLogMessage.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPAnchor.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSessionStatus.cs" />
+     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
+     <Compile Include="Assets\Rabbits\Demo\Scripts\AnimatorParamatersChange.cs" />
+     <Compile Include="Assets\Scripts\InputManager.cs" />
+     <Compile Include="Assets\Scripts\PlaneVisualizationManager.cs" />
+     <None Include="Assets\Vectrosity\Vectrosity Documentation\Vectrosity5 Upgrade Guide.txt" />
+     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
+     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
+     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
+     <None Include="Assets\Vectrosity\Vectrosity Documentation\Vectrosity changelog.txt" />
+     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PointCloud.shader" />
+     <None Include="Assets\GoogleARCore\Examples\ComputerVision\Materials\EdgeDetectionBackground.shader" />
+     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileSpecularWithLightEstimation.shader" />
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>C:/Users/AshIsh/Desktop/PathMarkAR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>C:/Users/AshIsh/Desktop/PathMarkAR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.CollabProxy.Editor">
+ <HintPath>C:/Users/AshIsh/Desktop/PathMarkAR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/AshIsh/Desktop/PathMarkAR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.DataPrivacy">
+ <HintPath>C:/Users/AshIsh/Desktop/PathMarkAR/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.BaselibModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FileSystemHttpModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTrackingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextCoreModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TimelineModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityTestProtocolModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VFXModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Locator">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="Vectrosity">
+ <HintPath>C:/Users/AshIsh/Desktop/PathMarkAR/Assets/Vectrosity/Plugins/Vectrosity.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Editor">
+ <HintPath>C:/Users/AshIsh/Desktop/PathMarkAR/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>C:/Users/AshIsh/Desktop/PathMarkAR/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Tracker">
+ <HintPath>C:/Users/AshIsh/Desktop/PathMarkAR/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript.Lang">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+ </Reference>
+ <Reference Include="Boo.Lang">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

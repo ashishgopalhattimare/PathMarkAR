@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 0962bdca27eaca34aaa15f7fdf608faf
+timeCreated: 1548406042
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: arm_handle_L
+    100002: arm_handle_R
+    100004: arm_L
+    100006: arm_R
+    100008: Armature
+    100010: ear_L
+    100012: ear_R
+    100014: foot_L
+    100016: foot_R
+    100018: hand_L
+    100020: hand_R
+    100022: head
+    100024: hip_L
+    100026: hip_R
+    100028: leg_handle_L
+    100030: leg_handle_R
+    100032: leg_L
+    100034: leg_R
+    100036: master
+    100038: neck
+    100040: Rabbit
+    100042: //RootNode
+    100044: Rabbit_Eyes
+    100046: shoulder_L
+    100048: shoulder_R
+    100050: spine1
+    100052: spine2
+    100054: spine3
+    400000: arm_handle_L
+    400002: arm_handle_R
+    400004: arm_L
+    400006: arm_R
+    400008: Armature
+    400010: ear_L
+    400012: ear_R
+    400014: foot_L
+    400016: foot_R
+    400018: hand_L
+    400020: hand_R
+    400022: head
+    400024: hip_L
+    400026: hip_R
+    400028: leg_handle_L
+    400030: leg_handle_R
+    400032: leg_L
+    400034: leg_R
+    400036: master
+    400038: neck
+    400040: //RootNode
+    400042: Rabbit
+    400044: Rabbit_Eyes
+    400046: shoulder_L
+    400048: shoulder_R
+    400050: spine1
+    400052: spine2
+    400054: spine3
+    4300000: Rabbit
+    4300002: Rabbit_Eyes
+    9500000: //RootNode
+    13700000: Rabbit
+    13700002: Rabbit_Eyes
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: master
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
