@@ -73,14 +73,14 @@ public class InputManager : MonoBehaviour {
 		if(followPathBool == 1)
 		{
 			float step = speed * Time.deltaTime;
-       		
+			
 			if(k < len)
 			{
 				travellingSalesman.transform.position = Vector3.MoveTowards(travellingSalesman.transform.position, hitArr[k], step);
 
 				Vector3 relativePos = hitArr[k] - travellingSalesman.transform.position;
-        		Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
-        		travellingSalesman.transform.rotation = rotation;
+				Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
+				travellingSalesman.transform.rotation = rotation;
 
 				if(travellingSalesman.transform.position == hitArr[k]) {
 					k++;
@@ -111,94 +111,90 @@ public class InputManager : MonoBehaviour {
 		k = 1;
 
 		rabitVisible = true;
-    }
+	}
 
-    public void deleteArrows() {
+	public void drawPath(Vector3[] arr, int limit) {
 
-    }
-
-    public void drawPath(Vector3[] arr, int limit) {
-
-    	for(int x = 0; x < limit; x++) {
-    		var go  = GameObject.Instantiate(arrowGameObject , arr[x] , Quaternion.identity);
+		for(int x = 0; x < limit; x++) {
+			var go  = GameObject.Instantiate(arrowGameObject , arr[x] , Quaternion.identity);
 			go.GetComponent<MeshRenderer>().material.color = Random.ColorHSV();
 
 			gameArray[x] = go;
-    	}
-    }
+		}
+	}
 
-    public void reset() {
-    	for(int x = 0; x < i; x++) {
-    		Destroy(gameArray[x]);
-    	}
-    	initialize(); // i = 0, len = 0
+	public void reset() {
+		for(int x = 0; x < i; x++) {
+			Destroy(gameArray[x]);
+		}
+		initialize(); // i = 0, len = 0
 
-    	if(rabitVisible) { // if rabit moving
-    		followPathBool = 0;
-    		rabitVisible = false;
+		if(rabitVisible) { // if rabit moving
+			followPathBool = 0;
+			rabitVisible = false;
 			Destroy(travellingSalesman);
 
 			rabitVisible = false;
-    	}
-    }
+		}
+	}
 
-    public void path1Save() {
+	public void path1Save() {
 
-    	if(rabitVisible) return; // if rabit moving
+		if(rabitVisible) return; // if rabit moving
 
-    	rabitVisible = true;
-    	path1Len = i; // n
-    	for(int x = 0; x < path1Len; x++) {
-    		path1Array[x] = hitArr[x];
-    	}
-    	reset();
-    	initialize();
-    }
+		rabitVisible = true;
+		path1Len = i; // n
+		for(int x = 0; x < path1Len; x++) {
+			path1Array[x] = hitArr[x];
+		}
+		reset();
+		initialize();
+	}
 
-    public void followPath1() {
+	public void followPath1() {
 
-    	if(rabitVisible == true) {
-    		Destroy(travellingSalesman); // current rabit Destroy
-    	}
-    	rabitVisible = true;
+		if(rabitVisible == true) {
+			Destroy(travellingSalesman); // current rabit Destroy
+		}
+		rabitVisible = true;
 
-    	for(int x = 0; x < path1Len; x++) {
-    		hitArr[x] = path1Array[x];
-    	}
-    	i = path1Len; // i = n
+		for(int x = 0; x < path1Len; x++) {
+			hitArr[x] = path1Array[x];
+		}
+		i = path1Len; // i = n
 
-    	drawPath(path1Array, path1Len); // redraw, gameArray store
-    	follow();
-    }
+		drawPath(path1Array, path1Len); // redraw, gameArray store
+		follow();
+	}
 
 	public void path2Save() {
 
 		if(rabitVisible) return; // if rabit moving
-    	
-    	rabitVisible = true;
-    	path2Len = i; // n
-    	for(int x = 0; x < path2Len; x++) {
-    		path2Array[x] = hitArr[x];
-    	}
-    	reset();
-    	initialize();
-    }
+		
+		rabitVisible = true;
+		path2Len = i; // n
+		for(int x = 0; x < path2Len; x++) {
+			path2Array[x] = hitArr[x];
+		}
+		reset();
+		initialize();
+	}
 
-    public void followPath2() {
+	public void followPath2() {
 
-    	if(rabitVisible == true) {
-    		Destroy(travellingSalesman); // current rabit Destroy
-    	}
-    	rabitVisible = true;
-    	
-    	for(int x = 0; x < path2Len; x++) {
-    		hitArr[x] = path2Array[x];
-    	}
-    	i = path2Len; // i = n
+		if(rabitVisible == true) {
+			Destroy(travellingSalesman); // current rabit Destroy
+		}
+		rabitVisible = true;
+		
+		for(int x = 0; x < path2Len; x++) {
+			hitArr[x] = path2Array[x];
+		}
+		i = path2Len; // i = n
 
-    	drawPath(path2Array, path2Len); // redraw, gameArray store
-    	follow();
+		drawPath(path2Array, path2Len); // redraw, gameArray store
+		follow();
 
 
-    }
+	}
 }
